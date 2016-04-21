@@ -11,7 +11,7 @@ body, html {
   display: block;
   background-color: #dedcde;
   height: 100%;
-  padding: 5% 0;
+  padding: 0;
 }
 
 .animationBackground {
@@ -25,20 +25,18 @@ body, html {
 /*Star*/
 
 .starHolder {
-  display: flex;
-  flex-direction: row;
   position: relative;
   overflow: auto;
   padding: 0;
   height: 100%;
   width: 100%;
-  visibility: collapse;
 }
 
 .singleStar {
     width: 0;
     height: 0;
-    margin: 50px 10%;
+    margin: 50px;
+    padding: 0;
     color: #fefaf5;
     position: relative;
     display: block;
@@ -88,39 +86,66 @@ body, html {
 
 
 .star1 {
-  animation: slideInDown 5s 1s infinite;
+  animation: fadeInDown 5s 1s infinite;
+  position: absolute;
+  left: 2%;
+  top: 4%;
 }
 
 .star2 {
-  animation: slideInDown 3s 3s infinite;
+  animation: fadeInDown 3s 3s infinite;
+  position: absolute;
+  left: 20%;
+  top: 40%;
 }
 
 .star3 {
-  animation: slideInDown 6s 2.4s infinite;
+  animation: fadeInDown 6s 2.4s infinite;
+  position: absolute;
+  right: 6%;
+  top: 3%;
 }
 
 .star4 {
-  animation: slideInDown 2s 4s infinite;
+  animation: fadeInDown 2s 4s infinite;
+  position: absolute;
+  right: 25%;
+  bottom: 15%;
 }
 
 .star5 {
-  animation: slideInDown 6s 2s infinite;
+  animation: fadeInDown 6s 2s infinite;
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
 }
 
 .star6 {
-  animation: slideInDown 3s 1.3s infinite;
+  animation: fadeInDown 3s 1.3s infinite;
+  position: absolute;
+  right: 40%;
+  bottom: 5%;
 }
 
 .star7 {
-  animation: slideInDown 5s 4s infinite;
+  animation: fadeInDown 5s 1.5s infinite;
+  position: absolute;
+  right: 10%;
+  bottom: -8%;
 }
 
 .star8 {
-  animation: slideInDown 6s -2s infinite;
+  animation: fadeInDown 6s -2s infinite;
+  position: absolute;
+  right: -11%;
+  bottom: 34%;
 }
 
 .star9 {
-  animation: slideInDown 4s 0.5s infinite;
+  animation: fadeInDown 4s 0.5s infinite;
+  position: absolute;
+  right: 20%;
+  top: 3%;
 }
 
 
@@ -128,8 +153,19 @@ body, html {
 Keyframes
 ***********************/
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -400%, 0) scale(0.25) skewY(20deg);
+  }
 
-@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: scale(0.3);
+  }
+
+
+/*@keyframes slideInDown {
   from {
     transform: translate3d(0, -300%, 0);
     visibility: visible;
@@ -143,3 +179,4 @@ Keyframes
 .slideInDown {
   animation-name: slideInDown;
 }
+*/
