@@ -17,7 +17,7 @@ body, html {
 .animationBackground {
   background-color: #2f4e4f;
   width: 60%;
-  height: 800px;
+  height: 700px;
   margin: auto;
 }
 
@@ -25,17 +25,20 @@ body, html {
 /*Star*/
 
 .starHolder {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  display: block;
   overflow: auto;
-  height: 250px;
-  padding: 2%;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  visibility: collapse;
 }
 
 .singleStar {
     width: 0;
     height: 0;
-    margin: 50px 0;
+    margin: 50px 10%;
     color: #fefaf5;
     position: relative;
     display: block;
@@ -84,4 +87,59 @@ body, html {
 }
 
 
+.star1 {
+  animation: slideInDown 5s 1s infinite;
+}
+
+.star2 {
+  animation: slideInDown 3s 3s infinite;
+}
+
+.star3 {
+  animation: slideInDown 6s 2.4s infinite;
+}
+
+.star4 {
+  animation: slideInDown 2s 4s infinite;
+}
+
+.star5 {
+  animation: slideInDown 6s 2s infinite;
+}
+
+.star6 {
+  animation: slideInDown 3s 1.3s infinite;
+}
+
+.star7 {
+  animation: slideInDown 5s 4s infinite;
+}
+
+.star8 {
+  animation: slideInDown 6s -2s infinite;
+}
+
+.star9 {
+  animation: slideInDown 4s 0.5s infinite;
+}
+
+
+/**********************
+Keyframes
+***********************/
+
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -300%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 800%, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
 }
