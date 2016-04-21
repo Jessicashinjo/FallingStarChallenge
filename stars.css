@@ -16,8 +16,8 @@ body, html {
 
 .animationBackground {
   background-color: #2f4e4f;
-  width: 60%;
-  height: 700px;
+  width: 40%;
+  height: 800px;
   margin: auto;
 }
 
@@ -154,8 +154,8 @@ Spaceship
 
 .shipHolder {
   position: absolute;
-  left: 30%;
-  top: 44%;
+  left: 36%;
+  top: 55%;
 }
 
 .shipTop {
