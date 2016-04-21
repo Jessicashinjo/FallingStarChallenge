@@ -148,6 +148,55 @@ body, html {
   top: 3%;
 }
 
+/**********************
+Spaceship
+***********************/
+
+.shipHolder {
+  position: absolute;
+  left: 30%;
+  top: 44%;
+}
+
+.shipTop {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 75px solid #b32123;
+  margin-left: 98px;
+  margin-bottom: -5px;
+}
+
+.shipBody {
+  border-top: 100px solid #b32123;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0px;
+  width: 250px;
+}
+
+.shipLeftLeg {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #ffa400;
+  margin-left: 49px;
+  padding-top: 21px;
+}
+
+.shipRightLeg {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #ffa400;
+    padding-top: 21px;
+    margin-left: 89px;
+}
 
 /**********************
 Keyframes
@@ -163,20 +212,3 @@ Keyframes
     opacity: 1;
     transform: scale(0.3);
   }
-
-
-/*@keyframes slideInDown {
-  from {
-    transform: translate3d(0, -300%, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 800%, 0);
-  }
-}
-
-.slideInDown {
-  animation-name: slideInDown;
-}
-*/

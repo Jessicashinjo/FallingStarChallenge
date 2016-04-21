@@ -6,7 +6,7 @@ sides color of wrapper: #dedcde
 
 color of stars: #fefaf5
 
-color top of ship: #fefaf5
+color top of ship: #b32123
 
 color legs of ship: #ffa400
 
