@@ -48,7 +48,7 @@ body, html {
     -webkit-transform: rotate(35deg) scale(.3);
     -ms-transform: rotate(35deg) scale(.3);
     -o-transform: rotate(35deg) scale(.3);
-    transition: transform .2s ease-in .3 ease-out;
+    transition: transform .2s ease-in .2s ease-out;
 }
 
 .singleStar:before {
@@ -88,43 +88,42 @@ body, html {
 
 
 .star1 {
-  animation: fadeInDown 10s -0.5s infinite,
-             fade 2s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   left: 2%;
   top: 10%;
 }
 
 .star2 {
-  animation: fadeInDown 9s -0.5s infinite;
+  animation: fadeInDown 9s -0.2s infinite;
   position: absolute;
   left: 20%;
   top: 40%;
 }
 
 .star3 {
-  animation: fadeInDown 8s -0.5s infinite;
+  animation: fadeInDown 8s -0.1s infinite;
   position: absolute;
   right: 6%;
   top: 3%;
 }
 
 .star4 {
-  animation: fadeInDown 7s -0.5s infinite;
+  animation: fadeInDown 7s 0s infinite;
   position: absolute;
   right: 25%;
   bottom: 15%;
 }
 
 .star5 {
-  animation: fadeInDown 8s -0.5s infinite;
+  animation: fadeInDown 8s 0.5s infinite;
   position: absolute;
   left: 5%;
   bottom: 15%;
 }
 
 .star6 {
-  animation: fadeInDown 9s -0.5s infinite;
+  animation: fadeInDown 9s 1s infinite;
   position: absolute;
   right: 40%;
   bottom: 5%;
@@ -138,14 +137,14 @@ body, html {
 }
 
 .star8 {
-  animation: fadeInDown 9s -0.5s infinite;
+  animation: fadeInDown 9s -0.2s infinite;
   position: absolute;
   right: -11%;
   bottom: 34%;
 }
 
 .star9 {
-  animation: fadeInDown 8s -0.5s infinite;
+  animation: fadeInDown 8s -0.1s infinite;
   position: absolute;
   right: 20%;
   top: 15%;
@@ -271,18 +270,20 @@ Keyframes
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(30%, -600%, 0) scale(0.2);
+    transform: translate3d(0, -600%, 0) scale(0.25);
     animation-timing-function: ease-in;
   }
 
   50% {
     opacity: .5;
-    transform: translate3d(30%, -300%, 0) scale(0.15);
+    transform: translate3d(0, -300%, 0) scale(0.2);
+    animation-timing-function: ease-out;
   }
 
   100% {
     opacity: .05;
-    transform: translate3d(30%, 0%, 0) scale(0.1);
+    transform: translate3d(0, 0%, 0) scale(0.1);
+    animation-timing-function: ease-out;
 }
 
 
