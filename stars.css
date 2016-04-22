@@ -40,6 +40,7 @@ body, html {
     color: #fefaf5;
     position: relative;
     display: block;
+    opacity: 0;
     border-right: 100px solid transparent;
     border-bottom: 70px solid #fefaf5;
     border-left: 100px solid transparent;
@@ -47,6 +48,7 @@ body, html {
     -webkit-transform: rotate(35deg) scale(.3);
     -ms-transform: rotate(35deg) scale(.3);
     -o-transform: rotate(35deg) scale(.3);
+    transition: transform .2s ease-in 1s ease-out;
 }
 
 .singleStar:before {
@@ -86,66 +88,129 @@ body, html {
 
 
 .star1 {
-  animation: fadeInDown 5s 1s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   left: 2%;
-  top: 4%;
+  top: 10%;
 }
 
 .star2 {
-  animation: fadeInDown 3s 3s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   left: 20%;
   top: 40%;
 }
 
 .star3 {
-  animation: fadeInDown 6s 2.4s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   right: 6%;
   top: 3%;
 }
 
 .star4 {
-  animation: fadeInDown 2s 4s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   right: 25%;
   bottom: 15%;
 }
 
 .star5 {
-  animation: fadeInDown 6s 2s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   left: 5%;
   bottom: 15%;
 }
 
 .star6 {
-  animation: fadeInDown 3s 1.3s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   right: 40%;
   bottom: 5%;
 }
 
 .star7 {
-  animation: fadeInDown 5s 1.5s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   right: 10%;
   bottom: -8%;
 }
 
 .star8 {
-  animation: fadeInDown 6s -2s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   right: -11%;
   bottom: 34%;
 }
 
 .star9 {
-  animation: fadeInDown 4s 0.5s infinite;
+  animation: fadeInDown 10s -0.5s infinite;
   position: absolute;
   right: 20%;
-  top: 3%;
+  top: 15%;
+}
+
+.star10 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+}
+
+.star11 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  right: 20%;
+  bottom: 40%;
+}
+
+.star12 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  left: 3%;
+  bottom: -15%;
+}
+
+.star13 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+
+.star14 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  right: 1%;
+  top: 20%;
+}
+
+.star15 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+
+.star16 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  left: 10%;
+  top: -8%;
+}
+
+.star17 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  left: -11%;
+  top: 34%;
+}
+
+.star18 {
+  animation: fadeInDown 10s 5s infinite;
+  position: absolute;
+  left: -16%;
+  bottom: -3%;
 }
 
 /**********************
@@ -205,10 +270,12 @@ Keyframes
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -400%, 0) scale(0.25) skewY(20deg);
+    transform: translate3d(30%, -600%, 0) scale(0.25);
+    animation-timing-function: ease-in;
   }
 
   to {
-    opacity: 1;
+    opacity: .5;
     transform: scale(0.3);
+    animation-timing-function: ease-out;
   }
