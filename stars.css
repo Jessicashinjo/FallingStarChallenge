@@ -16,7 +16,7 @@ body, html {
 
 .animationBackground {
   background-color: #2f4e4f;
-  width: 40%;
+  width: 50%;
   height: 800px;
   margin: auto;
 }
@@ -26,8 +26,6 @@ body, html {
 
 .starHolder {
   position: relative;
-  overflow: auto;
-  padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -102,8 +100,8 @@ body, html {
 .star3 {
   animation: fadeInDown 6s 2.4s infinite;
   position: absolute;
-  right: 6%;
-  top: 3%;
+  right: -2%;
+  top: 16%;
 }
 
 .star4 {
@@ -117,14 +115,14 @@ body, html {
   animation: fadeInDown 6s 2s infinite;
   position: absolute;
   left: 5%;
-  bottom: 15%;
+  bottom: 0%;
 }
 
 .star6 {
   animation: fadeInDown 3s 1.3s infinite;
   position: absolute;
   right: 40%;
-  bottom: 5%;
+  bottom: -19%;
 }
 
 .star7 {
